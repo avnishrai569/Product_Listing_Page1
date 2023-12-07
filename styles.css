@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    margin-top: 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px;  
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.highlight-green{
+    background-color: green;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+#heading {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+img{
+    /* overflow: hidden; */
+    height: 25vh;
+    width: 25vh;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 449px;
+    height: 32.7px;
+    margin-left: 74px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+
+ button {
+    background: transparent;
+    border: none;
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+} 
+button i{
+    font-size: 30px;
+}
+
+.product-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* width: 580px; */
+    height: auto;
+    /* top: 143px;
+    left: 351px; */
+    border-radius: 1px;
+    text-align: start;
+}
+
+
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: 150px;
+    }
+}
+
+.product-container.active {
+    grid-template-columns: 1fr;
+}
+
+.vertical-view{
+    flex-direction: column;
+}
+
+
+.variants-styling{
+    background-color: #f5f5f5;
+    margin: 7px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+
+.txt{
+    flex: 1;
+}
+.my-img{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    background-color: lime;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border-top-left-radius:0px ;
+}
